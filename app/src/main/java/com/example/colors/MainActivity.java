@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.add(R.id.fragment_container,new Fragment1()).commit();
+                fragmentTransaction.replace(R.id.fragment_container,new Fragment1()).commit();
                 Toast.makeText(MainActivity.this,"Color changed to blue",Toast.LENGTH_LONG).show();
             }
         });
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.add(R.id.fragment_container,new Fragment2()).commit();
+                fragmentTransaction.replace(R.id.fragment_container,new Fragment2()).commit();
                 Toast.makeText(MainActivity.this,"Color changed to red",Toast.LENGTH_LONG).show();
             }
         });
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.add(R.id.fragment_container,new Fragment3()).commit();
+                fragmentTransaction.replace(R.id.fragment_container,new Fragment3()).commit();
                 Toast.makeText(MainActivity.this,"Color changed to green",Toast.LENGTH_LONG).show();
             }
         });
